@@ -5,6 +5,9 @@ ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di
 Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 */
 
+//Prelevo la div dove scrivere
+const container = document.getElementById("text-container");
+
 // Ciclo da 1 a 100
 for (let i = 1; i <= 100; i++) {
     // Creo una variabile per l'output (si resetta ad ogni ciclo)
@@ -28,5 +31,6 @@ for (let i = 1; i <= 100; i++) {
         output += `Number: ${i}`;
     }
 
+    container.innerHTML += output + "<br>";
     console.log(output);
 }
